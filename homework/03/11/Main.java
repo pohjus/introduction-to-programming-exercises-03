@@ -14,14 +14,13 @@ public class Main {
 
         switch(operator) {
             case "+":   result = number1 + number2; break;
-            case "-":   result = number1 - number2; break;
+            case "-":   result = number1 - number2; break;                       
+            case "x":   result = number1 / number2; break;
             case "/":   if(number2 == 0) {
                             out.println("do not divide with zero"); return; // end the app.
                         } else {
                             result = (double) number1 / number2; break;
-                        }                        
-            case "x":   result = number1 / number2; break;
-
+                        } 
             default:   out.println("wrong operator"); return; // end the app.
         }
 
