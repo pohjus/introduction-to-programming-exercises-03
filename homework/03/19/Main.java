@@ -1,13 +1,16 @@
-import java.io.Console;
-
 import static java.lang.System.out;
 
-/**
- * Exercises 19: Sakari hunts Mac - game.
- *
- * @author Jussi Pohjolainen
- */
 public class Main {
+    static final int BOARD_SIZE = 10;
+    static final int MIN_POSITION = 1;
+    static final int MAX_POSITION = 8;
+    
+    static final int MOVE_UP = 0;
+    static final int MOVE_LEFT = 1;
+    static final int MOVE_DOWN = 2;
+    static final int MOVE_RIGHT = 3;
+    static final int NUM_MAC_MOVES = 4;
+
     public static void main(String[] args) {
 
         int santeriX = 5;
@@ -17,16 +20,16 @@ public class Main {
 
         while (true) {
             // Draw game
-            for (int y = 0; y < 10; y++) {
-                for (int x = 0; x < 10; x++) {
+            for (int y = 0; y < BOARD_SIZE; y++) {
+                for (int x = 0; x < BOARD_SIZE; x++) {
                     if (x == santeriX && y == santeriY) {
-                        System.out.print("S");
+                        out.print("S");
                     } else if (x == macX && y == macY) {
-                        System.out.print("M");
-                    } else if (x == 0 || x == 9 || y == 0 || y == 9) {
-                        System.out.print("#");
+                        out.print("M");
+                    } else if (x == 0 || x == BOARD_SIZE - 1 || y == 0 || y == BOARD_SIZE - 1) {
+                        out.print("#");
                     } else {
-                        System.out.print("-");
+                        out.print("-");
                     }
                 }
                 System.out.println();
@@ -34,28 +37,28 @@ public class Main {
 
             // Check victory
             if (santeriX == macX && santeriY == macY) {
-                System.out.println("You won!");
+                out.println("You won!");
                 break;
             }
 
             // Santeri's skills
-            System.out.println("Move (W/A/S/D): ");
+            out.println("Move (W/A/S/D): ");
             String move = System.console().readLine().toUpperCase();
 
-            // Omitting { } and put everything on one line
-            if (move.equals("W") && santeriY > 1) santeriY--;
-            if (move.equals("A") && santeriX > 1) santeriX--;
-            if (move.equals("S") && santeriY < 8) santeriY++;
-            if (move.equals("D") && santeriX < 8) santeriX++;
+            // NOTE: Single-line if-statements are used intentionally here for brevity.
+            if (move.equals("W") && santeriY > MIN_POSITION) santeriY--;
+            if (move.equals("A") && santeriX > MIN_POSITION) santeriX--;
+            if (move.equals("S") && santeriY < MAX_POSITION) santeriY++;
+            if (move.equals("D") && santeriX < MAX_POSITION) santeriX++;
 
             // Mac's skills
-            int macMove = (int) (Math.random() * 5);
+            int macMove = (int) (Math.random() * NUM_MAC_MOVES);
 
-            // Omitting { } and put everything on one line
-            if (macMove == 0 && macY > 1) macY--;
-            if (macMove == 1 && macX > 1) macX--;
-            if (macMove == 2 && macY < 8) macY++;
-            if (macMove == 3 && macX < 8) macX++;
+            // NOTE: Single-line if-statements are used intentionally here for brevity.
+            if (macMove == MOVE_UP && macY > MIN_POSITION) macY--;
+            if (macMove == MOVE_LEFT && macX > MIN_POSITION) macX--;
+            if (macMove == MOVE_DOWN && macY < MAX_POSITION) macY++;
+            if (macMove == MOVE_RIGHT && macX < MAX_POSITION) macX++;
         }
     }
 }
