@@ -1,6 +1,17 @@
 
 import static java.lang.System.out;
 
+/**
+ * Exercises 14.
+ * 
+ * Toteuta sovellus jossa kysyt käyttäjältä salasanan.
+ *
+ * Tarkista, että salasana on vähintään 8 merkkiä pitkä, sisältää ainakin yhden numeron, 
+ * yhden ison kirjaimen ja yhden pienen kirjaimen. Jos salasana on kelvollinen, tulosta 
+ * "Salasana hyväksytty", muuten tulosta syy miksi ei hyväksytty.
+ * 
+ * @author Jussi Pohjolainen
+ */
 public class Main {    
     public static void main(String [] args) {
         out.print("Give pw: ");
@@ -43,7 +54,7 @@ public class Main {
         errorMsg += (!isDigitOk)     ? "   Must have digit.\n" : "";
 
         out.println(errorMsg);
-             
+
     }
 
 }

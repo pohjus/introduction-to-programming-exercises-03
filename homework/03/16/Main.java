@@ -1,5 +1,20 @@
 import static java.lang.System.out;
 
+
+/**
+ * Exercises 16.
+ * 
+ * Toteuta nyt sovellus joka kysyy käyttäjältä nimen. 
+ * 
+ * anna nimi: 
+ * seppo
+ * 
+ * Tämän jälkeen ohjelma tulostaa annetun nimen siten että sen kirjaimet ovat satunnaisesti sekoitetut, esim:
+ * 
+ * oepps
+ * 
+ * @author Jussi Pohjolainen
+ */
 public class Main {
     public static void main(String[] args) {
         // Prompt the user for a string

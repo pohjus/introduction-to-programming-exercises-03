@@ -3,6 +3,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
+
+/**
+ * Exercises 17 - 18: Hangman game.
+ * 
+ * @author Jussi Pohjolainen
+ */
 public class HangmanGame {
     public static void main(String[] args) throws IOException {
         // Attempt to read lines from the words.txt file

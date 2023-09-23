@@ -1,6 +1,17 @@
 
 import static java.lang.System.out;
 
+
+/**
+ * Exercises 09.
+ * 
+ * Muokkaa edeltävää siten, että palindromisanat myös huomioidaan siten että välilyönnit, välimerkit (, .) 
+ * jätetään pois ja isoilla ja pienillä kirjaimilla ei ole merkitystä (equalsIgnoreCase). 
+ * Esim virke Nätin äänesi, sen äänitän katsotaan palindromiksi. Älä käytä välilyöntien ja välimerkkien poistamiseen merkkijonon replaceAll 
+ * toimintoa vaan tee tämä käyttämällä ainoastaan charAt ja + (merkkijonon yhdistäminen) toiminnallisuuksia.
+ *
+ * @author Jussi Pohjolainen
+ */
 public class Main {    
     public static void main(String [] args) {
         out.println("PALINDROME CHECKER");

@@ -1,7 +1,11 @@
 import java.io.Console;
 import static java.lang.System.out;
 
-
+/**
+ * Exercises 19: Sakari hunts Mac - game.
+ * 
+ * @author Jussi Pohjolainen
+ */
 public class Main {
     public static void main(String[] args) {
 

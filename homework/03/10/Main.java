@@ -1,6 +1,14 @@
 
 import static java.lang.System.out;
 
+/**
+ * Exercises 10.
+ * 
+ * Toteuta sovellus joka kysyy käyttäjältä kaksi kokonaislukua. 
+ * Ohjelma tulostaa kaikki luvut käyttäjän antamien lukujen välistä pienimmästä suurimpaan.
+ *
+ * @author Jussi Pohjolainen
+ */
 public class Main {    
     public static void main(String [] args) {
         out.print("Give Number 1: ");

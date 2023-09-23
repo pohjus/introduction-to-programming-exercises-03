@@ -1,6 +1,14 @@
 
 import static java.lang.System.out;
 
+/**
+ * Exercises 11.
+ * 
+ * Toteuta laskin sovellus. Ohjelma kysyy kaksi kokonaisluku ja operaattorin. 
+ * Ohjelma tulostaa laskutoimituksen tuloksen.
+ *
+ * @author Jussi Pohjolainen
+ */
 public class Main {    
     public static void main(String [] args) {
         out.print("Give Number 1: ");

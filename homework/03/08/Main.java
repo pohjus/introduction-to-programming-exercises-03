@@ -1,6 +1,14 @@
 
 import static java.lang.System.out;
 
+/**
+ * Exercises 08.
+ * 
+ * Toteuta sovellus, joka kysyy käyttäjältä merkkijonon. 
+ * Sovellus ilmoittaa oliko merkkijono palindromisana vai ei. 
+ *
+ * @author Jussi Pohjolainen
+ */
 public class Main {    
     public static void main(String [] args) {
         out.println("PALINDROME CHECKER");

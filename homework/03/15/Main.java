@@ -5,6 +5,29 @@ import java.nio.charset.Charset;
 import java.io.File;
 import static java.lang.System.out;
 
+/**
+ * Exercises 15.
+ * 
+ * Toteuta nyt erillinen tekstitiedosto “input.txt”, joka sisältää kokonaislukuja,
+ * esim:
+ *
+ *    3
+ *   -3
+ *   -1
+ *    4     
+ *    0
+ *
+ * Toteuta sovellus joka lukee tiedoston input.txt ja tulostaa sen perusteella seuraavan kuvion. 
+ * Kuvio luonnollisesti vaihtelee annetun tekstitiedoston mukaan.
+ *
+ *      |+++
+ *   ---|
+ *     -| 
+ *      |++++
+ *      |
+ * 
+ * @author Jussi Pohjolainen
+ */
 public class Main {
   public static void main(String [] args) throws IOException {
     // Set the file name from which to read lines
