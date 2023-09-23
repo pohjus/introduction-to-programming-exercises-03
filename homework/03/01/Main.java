@@ -4,6 +4,15 @@
 // System.out.println -> out.println!
 import static java.lang.System.out;
 
+/**
+ * Exercise 01.
+ * 
+ * Toteuta sovellus, jossa kysyt käyttäjän nimen. Jos nimi on "Jussi", 
+ * tulosta ruudulle "onpas sinulla tyhmä nimi". Muussa tapauksessa 
+ * tulosta "onpas sinulla hieno nimi".
+ *
+ * @author Jussi Pohjolainen
+ */
 public class Main {    
     public static void main(String [] args) {
         // Ask name, notice that because of static import
