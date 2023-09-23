@@ -3,16 +3,16 @@ import static java.lang.System.out;
 
 /**
  * Exercises 07.
- * 
- * Toteuta sovellus, joka kysyy käyttäjältä nimiä. 
- * Nimien kysyminen lopetaan kun käyttäjä antaa merkkijonon lopeta. 
- * Ohjelma tulostaa jokaisella kierroksella kaikki siihen mennessä 
+ * <p>
+ * Toteuta sovellus, joka kysyy käyttäjältä nimiä.
+ * Nimien kysyminen lopetaan kun käyttäjä antaa merkkijonon lopeta.
+ * Ohjelma tulostaa jokaisella kierroksella kaikki siihen mennessä
  * annetut nimet yhdellä rivillä
  *
  * @author Jussi Pohjolainen
  */
-public class Main {    
-    public static void main(String [] args) {
+public class Main {
+    public static void main(String[] args) {
         String result = "";
         String name = "";
 
@@ -30,6 +30,6 @@ public class Main {
             result += continueLoop ? name : "";
             out.println(result);
 
-        } while(continueLoop);
+        } while (continueLoop);
     }
 }

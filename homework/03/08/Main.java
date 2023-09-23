@@ -3,14 +3,14 @@ import static java.lang.System.out;
 
 /**
  * Exercises 08.
- * 
- * Toteuta sovellus, joka kysyy käyttäjältä merkkijonon. 
- * Sovellus ilmoittaa oliko merkkijono palindromisana vai ei. 
+ * <p>
+ * Toteuta sovellus, joka kysyy käyttäjältä merkkijonon.
+ * Sovellus ilmoittaa oliko merkkijono palindromisana vai ei.
  *
  * @author Jussi Pohjolainen
  */
-public class Main {    
-    public static void main(String [] args) {
+public class Main {
+    public static void main(String[] args) {
         out.println("PALINDROME CHECKER");
         out.print("Give word, I will check if it is a palindrome: ");
         String word = System.console().readLine();
@@ -20,8 +20,8 @@ public class Main {
         // Let's use a faster way of checking palindrome 
         // (compared to reverse)
 
-        for(int i = 0; i < word.length(); i++) {
-            
+        for (int i = 0; i < word.length(); i++) {
+
             // saippuakauppxas
             // ^             ^  => if these are the same, let's leave isPalindrome to true
 
@@ -32,7 +32,7 @@ public class Main {
             //   ^         ^    => isPalindrome is now set to false and with break we will
             //                     end the loop
 
-            if(word.charAt(i) != word.charAt(word.length() - 1 - i)) {
+            if (word.charAt(i) != word.charAt(word.length() - 1 - i)) {
                 isPalindrome = false;
                 break; // ends the for loop
             }

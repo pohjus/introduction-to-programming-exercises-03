@@ -6,10 +6,10 @@ import java.util.List;
 
 /**
  * Exercises 17 - 18: Hangman game.
- * 
+ *
  * @author Jussi Pohjolainen
  */
-public class HangmanGame {
+public class Main {
     public static void main(String[] args) throws IOException {
         // Attempt to read lines from the words.txt file
         List<String> words = Files.readAllLines(Path.of("words.txt"));
@@ -36,7 +36,7 @@ public class HangmanGame {
 
             // Read a line from the console
             String input = System.console().readLine();
-            
+
             // Initialize guessed character
             char guess = ' ';
 
@@ -47,11 +47,11 @@ public class HangmanGame {
 
             // Initialize a new guessed word string
             String newGuessedWord = "";
-            
+
             // Loop through each character in the selected word
             for (int i = 0; i < selectedWord.length(); i++) {
                 char currentChar = selectedWord.charAt(i);
-                
+
                 // If the guessed character matches the current character, update the new guessed word
                 if (currentChar == guess) {
                     newGuessedWord += guess;

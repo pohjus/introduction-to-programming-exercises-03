@@ -3,24 +3,24 @@ import static java.lang.System.out;
 
 /**
  * Exercises 06.
- * 
+ * <p>
  * Mitä tapahtuu kun “lasket yhteen” seuraavat. Miksi? Kokeile ja perustele.
- *
- *  1 + 2
- *  "merkkijono1" + "merkkijono2"
- *  "merkkijono1" + 2
- *  "merkkijono1" + 3.3
- *  3.3 + "merkkijono" + 3.3
- *  2 + "merkkijono2"
- *  "merkkijono1" + 'a'
- *  'a' + 'b'
+ * <p>
+ * 1 + 2
+ * "merkkijono1" + "merkkijono2"
+ * "merkkijono1" + 2
+ * "merkkijono1" + 3.3
+ * 3.3 + "merkkijono" + 3.3
+ * 2 + "merkkijono2"
+ * "merkkijono1" + 'a'
+ * 'a' + 'b'
  *
  * @author Jussi Pohjolainen
  */
 
-public class Main {    
-    public static void main(String [] args) {
-        
+public class Main {
+    public static void main(String[] args) {
+
 
         // calculates 1 + 2 => 3
         out.println(1 + 2);

@@ -3,16 +3,16 @@ import static java.lang.System.out;
 
 /**
  * Exercises 16.
- * 
- * Toteuta nyt sovellus joka kysyy käyttäjältä nimen. 
- * 
- * anna nimi: 
+ * <p>
+ * Toteuta nyt sovellus joka kysyy käyttäjältä nimen.
+ * <p>
+ * anna nimi:
  * seppo
- * 
+ * <p>
  * Tämän jälkeen ohjelma tulostaa annetun nimen siten että sen kirjaimet ovat satunnaisesti sekoitetut, esim:
- * 
+ * <p>
  * oepps
- * 
+ *
  * @author Jussi Pohjolainen
  */
 public class Main {
