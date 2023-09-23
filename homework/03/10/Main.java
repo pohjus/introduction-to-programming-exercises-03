@@ -5,19 +5,26 @@ import static java.lang.System.out;
  * Exercises 10.
  * <p>
  * Toteuta sovellus joka kysyy käyttäjältä kaksi kokonaislukua.
- * Ohjelma tulostaa kaikki luvut käyttäjän antamien lukujen välistä pienimmästä suurimpaan.
+ * Ohjelma tulostaa kaikki luvut käyttäjän antamien lukujen välistä
+ * pienimmästä suurimpaan.
  *
  * @author Jussi Pohjolainen
  */
 public class Main {
-    public static void main(String[] args) {
+
+    /**
+     * The main entry point for the application.
+     *
+     * @param args Command-line arguments. Not used in this application.
+     */
+    public static void main(final String[] args) {
         out.print("Give Number 1: ");
         int number1 = Integer.parseInt(System.console().readLine());
         out.print("Give Number 2: ");
         int number2 = Integer.parseInt(System.console().readLine());
 
-        // get the min and max using Math.min and Math.max, you can do this also with
-        // simple if...
+        // get the min and max using Math.min and Math.max, you can do
+        // this also with simple if...
         int min = Math.min(number1, number2);
         int max = Math.max(number1, number2);
 

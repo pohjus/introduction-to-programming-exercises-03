@@ -10,7 +10,13 @@ import java.util.List;
  * @author Jussi Pohjolainen
  */
 public class Main {
-    public static void main(String[] args) throws IOException {
+
+    /**
+     * The main entry point for the application.
+     *
+     * @param args Command-line arguments. Not used in this application.
+     */
+    public static void main(final String[] args) throws IOException {
         // Attempt to read lines from the words.txt file
         List<String> words = Files.readAllLines(Path.of("words.txt"));
 
@@ -52,11 +58,14 @@ public class Main {
             for (int i = 0; i < selectedWord.length(); i++) {
                 char currentChar = selectedWord.charAt(i);
 
-                // If the guessed character matches the current character, update the new guessed word
+                // If the guessed character matches the current character,
+                // update the new guessed word
                 if (currentChar == guess) {
                     newGuessedWord += guess;
                 } else {
-                    newGuessedWord += guessedWord.charAt(i) != '-' ? guessedWord.charAt(i) : '-';
+                    newGuessedWord += guessedWord.charAt(i) != '-'
+                                    ? guessedWord.charAt(i)
+                                    : '-';
                 }
             }
 

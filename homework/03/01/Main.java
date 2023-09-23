@@ -15,7 +15,12 @@ import static java.lang.System.out;
  * @author Jussi Pohjolainen
  */
 public class Main {
-    public static void main(String[] args) {
+    /**
+     * The main entry point for the application.
+     *
+     * @param args Command-line arguments. Not used in this application.
+     */
+    public static void main(final String[] args) {
         // Ask name, notice that because of static import
         // We do nat have to write System
         out.println("Give your name");

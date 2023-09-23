@@ -12,7 +12,12 @@ import static java.lang.System.out;
  * @author Jussi Pohjolainen
  */
 public class Main {
-    public static void main(String[] args) {
+    /**
+     * The main entry point for the application.
+     *
+     * @param args Command-line arguments. Not used in this application.
+     */
+    public static void main(final String[] args) {
         String result = "";
         String name = "";
 
@@ -25,8 +30,8 @@ public class Main {
             // true if stop not given
             continueLoop = !name.equalsIgnoreCase("stop");
 
-            // if continueloop is true, add name to the string, otherwise add "" 
-            // to to the string
+            // if continueloop is true, add name to the string,
+            // otherwise add "" to the string
             result += continueLoop ? name : "";
             out.println(result);
 

@@ -6,7 +6,8 @@ import static java.lang.System.out;
  * <p>
  * Luokkatyyppisiä muuttujia sanotaan usein olioiksi. String on luokkatyyppi ja
  * näin ollen siitä tehdyt muuttujat ovat oliota.
- * Oliolla voi olla operaatioita (palveluita, metodeita), joita ohjelmoija voi käyttää.
+ * Oliolla voi olla operaatioita (palveluita, metodeita), joita ohjelmoija voi
+ * käyttää.
  * Toteuta sovellus jossa testaat (mitä nämä siis tekevät?)
  * seuraavia palveluita: charAt(int), length(),  trim() (vinkki jälkimmäiseen,
  * tee merkkijono jossa on välilyöntejä alussa ja lopussa)
@@ -14,8 +15,14 @@ import static java.lang.System.out;
  * @author Jussi Pohjolainen
  */
 public class Main {
-    public static void main(String[] args) {
-        // Exercise 2: variables
+
+    /**
+     * The main entry point for the application.
+     *
+     * @param args Command-line arguments. Not used in this application.
+     */
+    public static void main(final String[] args) {
+       // Exercise 2: variables
         out.println("EXERCISE 02\n**********");
         out.println("jack".charAt(0));     // outputs first char 'j'
         out.println("jack".length());      // outputs the length of the String

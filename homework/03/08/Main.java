@@ -10,27 +10,35 @@ import static java.lang.System.out;
  * @author Jussi Pohjolainen
  */
 public class Main {
-    public static void main(String[] args) {
+    /**
+     * The main entry point for the application.
+     *
+     * @param args Command-line arguments. Not used in this application.
+     */
+    public static void main(final String[] args) {
         out.println("PALINDROME CHECKER");
         out.print("Give word, I will check if it is a palindrome: ");
         String word = System.console().readLine();
 
         boolean isPalindrome = true;
 
-        // Let's use a faster way of checking palindrome 
+        // Let's use a faster way of checking palindrome
         // (compared to reverse)
 
         for (int i = 0; i < word.length(); i++) {
 
             // saippuakauppxas
-            // ^             ^  => if these are the same, let's leave isPalindrome to true
+            // ^             ^
+            // => if these are the same, let's leave isPalindrome to true
 
             // saippuakauppxas
-            //  ^           ^   => if these are the same, let's leave isPalindrome to true
+            //  ^           ^
+            //  => if these are the same, let's leave isPalindrome to true
 
             // saippuakauppxas
-            //   ^         ^    => isPalindrome is now set to false and with break we will
-            //                     end the loop
+            //   ^         ^
+            //   => isPalindrome is now set to false and with break we will
+            //      end the loop
 
             if (word.charAt(i) != word.charAt(word.length() - 1 - i)) {
                 isPalindrome = false;
@@ -38,6 +46,7 @@ public class Main {
             }
         }
 
-        out.println(isPalindrome ? "It's palindrome!" : "It's not a palindrome");
+        out.println(isPalindrome ? "It's palindrome!"
+                                 : "It's not a palindrome");
     }
 }

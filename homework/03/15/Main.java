@@ -9,32 +9,41 @@ import static java.lang.System.out;
 /**
  * Exercises 15.
  * <p>
- * Toteuta nyt erillinen tekstitiedosto “input.txt”, joka sisältää kokonaislukuja,
+ * Toteuta nyt erillinen tekstitiedosto “input.txt”, joka sisältää
+ * kokonaislukuja,
  * esim:
- * <p>
+ * <pre>
  * 3
  * -3
  * -1
  * 4
  * 0
- * <p>
- * Toteuta sovellus joka lukee tiedoston input.txt ja tulostaa sen perusteella seuraavan kuvion.
+ * </pre>
+ * Toteuta sovellus joka lukee tiedoston input.txt ja tulostaa sen perusteella
+ * seuraavan kuvion.
  * Kuvio luonnollisesti vaihtelee annetun tekstitiedoston mukaan.
- * <p>
+ * <pre>
  * |+++
  * ---|
  * -|
  * |++++
  * |
- *
+ * </pre>
  * @author Jussi Pohjolainen
  */
 public class Main {
-    public static void main(String[] args) throws IOException {
+
+    /**
+     * The main entry point for the application.
+     *
+     * @param args Command-line arguments. Not used in this application.
+     */
+    public static void main(final String[] args) throws IOException {
         // Set the file name from which to read lines
         String textFileName = "input.txt";
         // Read all lines from the file into a List
-        List<String> allLines = Files.readAllLines(new File(textFileName).toPath(), Charset.defaultCharset());
+        List<String> allLines = Files.readAllLines(new File(textFileName)
+                .toPath(), Charset.defaultCharset());
 
         int currentNumber;
         int minNumber = 0;

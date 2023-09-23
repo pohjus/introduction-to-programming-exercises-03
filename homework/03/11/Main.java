@@ -10,7 +10,13 @@ import static java.lang.System.out;
  * @author Jussi Pohjolainen
  */
 public class Main {
-    public static void main(String[] args) {
+
+    /**
+     * The main entry point for the application.
+     *
+     * @param args Command-line arguments. Not used in this application.
+     */
+    public static void main(final String[] args) {
         out.print("Give Number 1: ");
         int number1 = Integer.parseInt(System.console().readLine());
         out.print("Give operator (+, -, /, x): ");
@@ -45,5 +51,4 @@ public class Main {
 
         out.println(result);
     }
-
 }

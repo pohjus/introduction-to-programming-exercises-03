@@ -19,8 +19,14 @@ import static java.lang.System.out;
  */
 
 public class Main {
-    public static void main(String[] args) {
-
+    /**
+     * The main entry point for the application.
+     *
+     * @param args Command-line arguments. Not used in this application.
+     */
+    public static void main(final String[] args) {
+        // NOTE: using "Magic numbers" intentionally because of the
+        // exercise given.
 
         // calculates 1 + 2 => 3
         out.println(1 + 2);
