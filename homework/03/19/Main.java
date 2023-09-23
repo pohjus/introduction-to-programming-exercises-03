@@ -39,7 +39,7 @@ public class Main {
             }
 
             // Santeri's skills
-            System.out.println("Liiku (W/A/S/D): ");
+            System.out.println("Move (W/A/S/D): ");
             String move = System.console().readLine().toUpperCase();
 
             // Omitting { } and put everything on one line
