@@ -5,7 +5,7 @@ public class Main {
     public static void main(String [] args) {
         out.println("PALINDROME CHECKER");
         out.print("Give word, I will check if it is a palindrome: ");
-        String originalWord = System.console().readLine();
+        String originalWord = System.console().readLine().toLowerCase();  // turns everything to lowercase
 
         String wordWithRemovedChars = "";
 
@@ -20,9 +20,6 @@ public class Main {
         
 
         boolean isPalindrome = true;
-
-        // let's turn everything to lowercase
-        wordWithRemovedChars = wordWithRemovedChars.toLowerCase();
 
         for(int i = 0; i < wordWithRemovedChars.length(); i++) {
             if(wordWithRemovedChars.charAt(i) != wordWithRemovedChars.charAt(wordWithRemovedChars.length() - 1 - i)) {
